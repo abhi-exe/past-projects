@@ -1,11 +1,11 @@
 import random
 import time
-import sqlalchemy as sql
-from sqlalchemy.orm import scoped_session, sessionmaker
+#import sqlalchemy as sql
+#from sqlalchemy.orm import scoped_session, sessionmaker
 
 
-engine=sql.create_engine('postgresql://postgres:veronica31@localhost:5432/bank')
-db = scoped_session(sessionmaker(bind=engine))
+#engine=sql.create_engine('postgresql://postgres:veronica31@localhost:5432/bank')
+#db = scoped_session(sessionmaker(bind=engine))
 
 
 print("Hi there! \n Welcome to THE MASTERMIND \n \t -Command Line Exclusive!")
