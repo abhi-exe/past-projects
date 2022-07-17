@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Welcome {{User}} to Huebrint, Inc. Business.
+{% endblock %}
+
+{% block head %}
+<style media="screen">
+  ol{
+    display: table;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+
+Yet! There is no Content to show.<br>
+But the site will be updated soon enough.<br>
+ Stay Tuned!
+ <br><br><br><br><br><br>
+
+ Wait... log update 001: <br>
+ Starship database:
+ <ol>
+   {% for i in Starship %}
+   <li> {% print i %} </li>
+   {% endfor %}
+ </ol>
+<br><br><br>
+
+
+<a href="{{ url_for('index') }}">Log Out and Reach Home Page</a>
+
+{% endblock %}

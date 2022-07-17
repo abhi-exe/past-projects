@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Welcome to Huebrint! Official Website of Huebrint Employees and Database.
+{% endblock %}
+
+{% block body %}
+Note: If you don't belong to this Website, kindly leave. To contine, Log in.
+<br><br><br><br>
+
+<form action="{{url_for('validlogin')}}" method="post">
+  <label for="email">Username:</label>
+  <input type="text" name="email" placeholder="Enter Your Username"><br>
+  <label for="key">Password:</label>
+  <input type="password" name="key" placeholder="Enter Your Password"><br>
+  <button>Log in to Huebrint!</button>
+</form>
+
+
+<br><br><br><br>
+<p>This website is not a Public website. Hence misuse of it is regarded as an offence under legal terms.</p>
+{% endblock %}

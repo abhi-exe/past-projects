@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Wrong Page: Error
+{% endblock %}
+
+{% block body %}
+You have reached a wrong page. Consider logging in to the Website.<br>
+
+<a href="{{ url_for('index') }}">Home</a>
+
+
+
+
+
+
+<p>This website is not a Public website. Hence misuse of it is regarded as an offence under legal terms.</p>
+{% endblock %}

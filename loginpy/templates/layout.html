@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% block head %}
+    {% endblock %}
+    <meta charset="utf-8">
+    <title>Huebrint-The Exclusive Startup</title>
+    <style>
+      body{
+        background-color: black;
+        color: white;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{% block heading %} {% endblock %}</h1>
+
+    <h3>{% block body %}
+    {% endblock %}
+   </h3>
+
+  </body>
+</html>

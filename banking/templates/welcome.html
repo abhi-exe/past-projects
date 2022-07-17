@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+    <link rel="icon" href="icon.jpg">
+    <title>Online Banking System</title>
+  </head>
+  <body>
+    <div class='page'>
+      <h1 id="wel">Welcome to Online Banking System</h1>
+      <a href="#p2" id="down">&#x21A1;</a>
+    </div>
+    <div id="p2" class="page">
+      <h3>Sign Up As</h3>
+      <div class="row">
+        <div class="column" id="col1" style="background-color:#aaa;">
+          <h2>
+            <a href="#banker", class="mlinks" id="banlink">Banker</a>
+          </h2>
+        </div>
+        <div class="column" id="col2" style="background-color:#bbb;">
+          <h2><a href="#player" class="mlinks" id="plalink">Player</a></h2>
+        </div>
+        <div class="column" id="col3" style="background-color:#ccc;">
+          <h2 class="both"><a href="#banpla" class="mlinks" id="banplalink">Banker and Player</a><h2>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="banker">
+      <div class="formi">
+      <form class="bafo" action="{{url_for ('createtable')}}" method="post">
+        <label for="Username">What should we call you?</label><br>
+        <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br><br><br>
+        <button type="submit" name="button" class="nametext">Create a Session !</button>
+      </form>
+    </div>
+    </div>
+    <div class="page" id="player">
+      <div class="formi">
+        <form class="bafo" action="{{url_for ('login')}}" method="post">
+          <label for="scode">What's the Session Code ?(provided by the banker)</label><br>
+          <input type="text" name="scode" placeholder="Code" class="nametext"><br>
+          <label for="passwd">Please Enter the Password</label><br>
+          <input type="password" name="passwd" placeholder="Password" class="nametext"><br>
+          <label for="meinname">and your Name too....</label><br>
+          <input type="text" name="meinname" placeholder="Name" class="nametext"><br><br><br>
+          <button type="submit" name="button" class="nametext">Log In as a Player !</button>
+
+        </form>
+
+      </div>
+
+    </div>
+    <div class="page" id="banpla">
+      <div class="formi">
+      <form class="bafo" action="{#url_for 'createtable23()'#}" method="post">
+        <label for="Username">What should we call you?</label><br>
+        <input type="text" name="Username" placeholder="Enter Your Name" class="nametext"><br>
+        <label for="players">How many People are Playing ?</label><br>
+        <input type="number" max="10" min="1" name="players" placeholder="Players(max 10)" class="nametext"><br><br><br>
+        <button type="submit" name="button" class="nametext">Create a Session !</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

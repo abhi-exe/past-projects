@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Login Error
+{% endblock %}
+
+{% block body %}
+Your {{wrong}} is typed incorrectly. Please try again by reaching the Home Page.<br>
+
+<a href="{{ url_for('index') }}">Home</a>
+
+
+
+
+
+
+<p>This website is not a Public website. Hence misuse of it is regarded as an offence under legal terms.</p>
+{% endblock %}
