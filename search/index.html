@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+          function clear(){
+            document.querySelector('#searchbox').value=''
+          }
+        </script>
+    </head>
+    <body>
+      <a href="image.html" id="imagebutton">Image Search</a>
+      <a href="advanced.html" id="advancedbutton">Advanced Search</a>
+      <div class="work">
+        <form id="searchform" action="https://google.com/search" target="_blank" onsubmit="clear()">
+          <div class="searchbox">
+            <img src="mag.png" height="20px" width="20px">
+            <input id="searchbox" type="text" name="q" autofocus="autofocus" placeholder="  Search Here ! "><br>
+          </div>
+          <div class="submitbutton">
+            <input id="submitbutton" type="submit" value="Google Search">
+            <button type="submit" name="btnI" value="I'm Feeling Lucky" class="doodle">I'm Feelin' Lucky</button>
+          </div>
+        </form>
+    </body>
+</html>

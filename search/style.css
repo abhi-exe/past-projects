@@ -1,0 +1,88 @@
+#imagebutton{
+  margin-left:77%;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+#imagebutton:hover{
+  text-decoration: underline;
+}
+
+
+#advancedbutton{
+  margin-right: 2%;
+  margin-left:2%;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+#advancedbutton:hover{
+  text-decoration: underline;
+}
+.work{
+  margin-top: 18%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.searchbox{
+  padding: 2%;
+  background-color: none;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 45px;
+  border-color: grey;
+}
+.searchbox:hover{
+  box-shadow:0px 0px 10px #03fcf0;
+}
+
+.submitbutton{
+  padding-top: : 3%;
+  padding-left: 30%;
+  margin-top: 4%;
+}
+
+#searchbox{
+  font-size:16px;
+  height: 50px;
+  width: 700px;
+  border-radius: 15px;
+  border-width: none;
+  border-color: none;
+  border: none;
+  margin-left: 2%;
+  padding-left: 2%;
+}
+
+#submitbutton{
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#submitbutton:hover{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	color: #222;
+}
+
+.doodle{
+  font-size: 20px;
+  margin-left: 4%;
+  border-radius: 4px;
+  border:1px solid white;
+  cursor: pointer;
+}
+
+.doodle:hover{
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	color: #222;
+}
